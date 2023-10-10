@@ -1,0 +1,46 @@
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: azure;
+}
+
+.apple{
+    background-color: #666666;
+    height: 198px;
+    width: 208px;
+    border-radius: 35% 35% 41% 41% / 42% 42% 75% 75%;
+}
+
+.apple::before{
+    background-color: #666666;
+    height: 55px;
+    width: 55px;
+    position: absolute;
+    content: "";
+    border-radius: 100px 0;
+    margin: -51px 0 0 100px;
+    z-index: 5;
+}
+
+.apple::after{
+    background-color: azure;
+    height: 90px;
+    width: 90px;
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    margin: 28px 0 0 174px;
+    z-index: 3;
+    box-shadow: -127px -109px 0 azure,
+                -118px -107px 0 azure,
+                -115px -102px 0 azure,
+                -105px -109.5px 0 azure,
+                -105px -109px 0 azure,
+                -129px 166px 0 azure,
+                -107.5px 166px 0 azure,
+                -119px 161px 0 azure;
+}
